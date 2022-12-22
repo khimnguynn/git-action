@@ -1,9 +1,14 @@
-name: hello
+name: hello world
 on:
+
   push:
-    branches: [main, master]
+    branches:
+      - 'main'
+      - 'master'
+
+
 jobs:
   say-hello:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - run: echo Hello World
+      - run: echo Hello GithubAction
